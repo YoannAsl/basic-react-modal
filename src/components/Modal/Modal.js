@@ -27,6 +27,7 @@ export const Modal = ({ isOpened, content, style, handleCloseModal }) => {
 	if (!isOpened) {
 		return null;
 	}
+
 	return (
 		<div
 			className='overlay'
