@@ -47,6 +47,6 @@ You can also add a `style` prop :
 	isOpened={isModalOpened}
 	content='Example'
 	handleCloseModal={handleCloseModal}
-    style={customStyle}
+	style={customStyle}
 />
 ```
