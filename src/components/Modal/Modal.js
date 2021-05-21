@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const Modal = ({ isOpened, content, style, handleCloseModal }) => {
 	const defaultStyles = {
@@ -57,4 +58,11 @@ export const Modal = ({ isOpened, content, style, handleCloseModal }) => {
 			</div>
 		</div>
 	);
+};
+
+Modal.propTypes = {
+	isOpened: PropTypes.bool.isRequired,
+	content: PropTypes.string.isRequired,
+	style: PropTypes.object,
+	handleCloseModal: PropTypes.func.isRequired,
 };
