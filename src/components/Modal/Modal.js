@@ -1,7 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Modal = ({ isOpened, content, style, handleCloseModal }) => {
+export const Modal = ({
+	isOpened,
+	content,
+	style,
+	handleCloseModal,
+	buttonContent,
+}) => {
 	const defaultStyles = {
 		overlay: {
 			position: 'fixed',
@@ -53,7 +59,7 @@ export const Modal = ({ isOpened, content, style, handleCloseModal }) => {
 							: defaultStyles.closeButton
 					}
 				>
-					Close Modal
+					{buttonContent ? buttonContent : 'Close Modal'}
 				</button>
 			</div>
 		</div>
@@ -65,4 +71,5 @@ Modal.propTypes = {
 	content: PropTypes.string.isRequired,
 	style: PropTypes.object,
 	handleCloseModal: PropTypes.func.isRequired,
+	buttonContent: PropTypes.string.isRequired,
 };
