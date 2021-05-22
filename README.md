@@ -1,5 +1,7 @@
 # ya-basic-react-modal
 
+[npm link](https://www.npmjs.com/package/ya-basic-react-modal)
+
 ## Installation
 
 ```sh
@@ -19,6 +21,7 @@ The most basic use of the Modal can be described with :
 	isOpened={isModalOpened}
 	content='Example'
 	handleCloseModal={handleCloseModal}
+	buttonContent='Example'
 />
 ```
 
@@ -47,6 +50,7 @@ You can also add a `style` prop :
 	isOpened={isModalOpened}
 	content='Example'
 	handleCloseModal={handleCloseModal}
+	buttonContent='Example'
 	style={customStyle}
 />
 ```
