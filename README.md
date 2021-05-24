@@ -25,6 +25,13 @@ The most basic use of the Modal can be described with :
 />
 ```
 
+```sh
+isOpened takes a boolean value
+content takes a string
+handleCloseModal takes a function
+buttonContent takes a string
+```
+
 You can also add a `style` prop :
 
 ```jsx
